@@ -98,7 +98,7 @@ def mainGame():
         for pipe in upperPipes:
             pipeMidPos = pipe['x'] + GAME_SPRITES['pipe'][0].get_width()/2
             if pipeMidPos<= playerMidPos < pipeMidPos +4:
-                score +=1
+                score=score+1
                 print(f"Your score is {score}") 
                 GAME_SOUNDS['point'].play()
 
@@ -191,12 +191,6 @@ if __name__ == "__main__":
     FPSCLOCK = pygame.time.Clock()
     pygame.display.set_caption('Flappy Bird by CodeWithHarry')
     GAME_SPRITES['numbers'] = ( 
-        pygame.image.load('C:\\Users\\akash\\Desktop\\python3.8\\.vscode\\birdflappygame\\gallery\\sprites\\0.png').convert_alpha(),
-        pygame.image.load('C:\\Users\\akash\\Desktop\\python3.8\\.vscode\\birdflappygame\\gallery\\sprites\\0.png').convert_alpha(),
-        pygame.image.load('C:\\Users\\akash\\Desktop\\python3.8\\.vscode\\birdflappygame\\gallery\\sprites\\0.png').convert_alpha(),
-        pygame.image.load('C:\\Users\\akash\\Desktop\\python3.8\\.vscode\\birdflappygame\\gallery\\sprites\\0.png').convert_alpha(),
-        pygame.image.load('C:\\Users\\akash\\Desktop\\python3.8\\.vscode\\birdflappygame\\gallery\\sprites\\0.png').convert_alpha(),
-        pygame.image.load('C:\\Users\\akash\\Desktop\\python3.8\\.vscode\\birdflappygame\\gallery\\sprites\\0.png').convert_alpha(),
         pygame.image.load('C:\\Users\\akash\\Desktop\\python3.8\\.vscode\\birdflappygame\\gallery\\sprites\\0.png').convert_alpha(),
         pygame.image.load('C:\\Users\\akash\\Desktop\\python3.8\\.vscode\\birdflappygame\\gallery\\sprites\\1.png').convert_alpha(),
         pygame.image.load('C:\\Users\\akash\\Desktop\\python3.8\\.vscode\\birdflappygame\\gallery\\sprites\\2.png').convert_alpha(),
